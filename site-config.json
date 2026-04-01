@@ -1,0 +1,21 @@
+{
+  "version": "5.2",
+  "title": "Yihua Xuan",
+  "style": "Japanese architect quiet minimal with subtle creative-tech luxury",
+  "palette": {
+    "background": "cool pale gray",
+    "text": "soft charcoal"
+  },
+  "features": {
+    "paperGrain": true,
+    "filmNoise": true,
+    "subtleGradient": true,
+    "wabiSabiAtmosphere": true,
+    "typewriterIntro": true,
+    "loopingEllipsis": true,
+    "lingeringPointerMotion": true,
+    "formProvider": "Formspree",
+    "formEndpoint": "https://formspree.io/f/mzdkgnoj",
+    "submitState": "form softly retracts, then shows sent"
+  }
+}

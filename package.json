@@ -1,0 +1,10 @@
+{
+  "name": "quiet-minimal-personal-site-v5-2",
+  "version": "5.2.0",
+  "private": true,
+  "description": "Ultra-minimal static personal landing page with Formspree contact form.",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000"
+  }
+}

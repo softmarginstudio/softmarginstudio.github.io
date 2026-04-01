@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A quiet personal landing page by Yihua Xuan." />
+  <title>Yihua Xuan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <main class="site" id="site">
+    <section class="content" id="contentBlock">
+      <p class="line fade-in delay-1">you found my space</p>
+
+      <div class="gap gap-after-space"></div>
+
+      <p class="line fade-in delay-2">not everything here asks for attention</p>
+      <p class="line fade-in delay-3">some things linger</p>
+
+      <div class="gap gap-after-first-linger"></div>
+
+      <p class="line fade-in delay-4">made with care</p>
+      <p class="line linger-line fade-in delay-5">to linger</p>
+      <p class="line ellipsis-line fade-in delay-6" aria-hidden="true"><span class="ellipsis">...</span></p>
+
+      <div class="gap gap-after-last-linger"></div>
+
+      <div class="note-wrap fade-in delay-7" id="noteWrap">
+        <button class="note-link" id="noteToggle" type="button" aria-expanded="false" aria-controls="notePanel">send a note</button>
+
+        <form
+          id="contactForm"
+          class="note-panel"
+          action="https://formspree.io/f/mzdkgnoj"
+          method="POST"
+          novalidate
+        >
+          <div class="field">
+            <input
+              type="text"
+              name="name"
+              placeholder="name"
+              required
+              minlength="2"
+              maxlength="60"
+              autocomplete="name"
+              pattern="^[A-Za-z][A-Za-z\s'\-]{1,59}$"
+              title="Please enter a valid name"
+            />
+            <div class="field-error" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <input
+              type="email"
+              name="email"
+              placeholder="email"
+              required
+              maxlength="120"
+              autocomplete="email"
+              inputmode="email"
+              pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+              title="Please enter a valid email address"
+            />
+            <div class="field-error" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="1-xxx-xxx-xxxx"
+              maxlength="14"
+              autocomplete="tel"
+              inputmode="numeric"
+              pattern="^1-\d{3}-\d{3}-\d{4}$"
+              title="Use US format: 1-xxx-xxx-xxxx"
+            />
+            <div class="field-error" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <textarea
+              name="message"
+              placeholder="message summary"
+              rows="3"
+              required
+              minlength="8"
+              maxlength="400"
+              title="Please add a brief message"
+            ></textarea>
+            <div class="field-error" aria-live="polite"></div>
+          </div>
+          <div class="actions">
+            <button class="submit" type="submit">send</button>
+          </div>
+        </form>
+
+        <div class="sent-state" id="sentState" aria-live="polite">sent</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-copy">
+        <p>shaped by Yihua Xuan</p>
+        <p>from my screen to yours</p>
+      </div>
+      <img class="footer-logo" src="yi-brand-logo.svg" alt="Yihua Xuan logo" />
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
